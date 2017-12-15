@@ -1,0 +1,68 @@
+#NavBar .topNavBar {
+  padding: 13px 0px;
+  background: #084884;
+  margin: 0 -15px;
+}
+#NavBar .topNavBar i {
+  margin: 7px;
+  font-size: 1.3em;
+  color: #1872c5;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+#NavBar .topNavBar i:hover {
+  color: white;
+}
+#NavBar .topNavBar p {
+  color: #96c6f4;
+}
+#NavBar .topNavBar button {
+  width: 200px;
+  border-radius: 30px;
+  background: #1872c5;
+  color: white;
+  font-size: 0.8em;
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+  margin: -5px 0px;
+  transition: all 2s ease;
+}
+#NavBar .topNavBar button:hover {
+  background: #96c6f4;
+}
+#NavBar .mainNavBar {
+  background: #1872c5;
+  margin: 0 -15px;
+}
+#NavBar .mainNavBar .mainNavBarTop {
+  padding: 50px 0 100px 0;
+  border-bottom: 2px solid black;
+}
+#NavBar .mainNavBar .mainNavBarTop img:first-child {
+  margin-right: 50px;
+  cursor: pointer;
+}
+#NavBar .mainNavBar .mainNavBarTop span i {
+  width: 40px;
+  height: 40px;
+  background: #084884;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px 0px;
+  color: white;
+}
+#NavBar .mainNavBar .mainNavBarTop span p {
+  line-height: 15px;
+}
+#NavBar .mainNavBar .mainNavBarBottom ul li a {
+  color: white;
+}
+#NavBar .mainNavBar .mainNavBarBottom ul ul li {
+  padding: 10px;
+  text-transform: capitalize;
+}
+#NavBar .mainNavBar .mainNavBarBottom ul ul li a {
+  color: #1872c5;
+}
