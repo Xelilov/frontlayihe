@@ -45,6 +45,8 @@
 			cursor: pointer;
 			}
 			span{
+				color:#96c6f4;
+				
 				i{	
 					width: 40px;
 					height: 40px;
@@ -53,18 +55,33 @@
 					text-align: center;
 					font-size: 1.5em;
 					padding:10px 0px;
-					color: white;
+					color:  white;
 				}			
 				p{
 					line-height: 15px;
+					color: #96c6f4;
 				}			
 			}
 		}
 		.mainNavBarBottom{
 			ul{
 				li{
+					margin-right: 30px;
 					a{
 						color: white;
+						font-size: 1.3em;
+						text-transform: capitalize;
+						i{
+							margin-left:3px;
+							transition: all .5s ease;
+						}
+						&:hover{
+							background:#1872c5;
+							color:#96c6f4;
+							i{
+								transform: rotate(180deg);
+							}
+						}
 					}
 				}
 				ul{
@@ -73,11 +90,131 @@
 						text-transform: capitalize;
 						a{
 							color: #1872c5;
+							font-size: 1.1em;
+							&:hover{
+								background:white;
+								color: #084884;
+								text-decoration: none;
+								transition: all 1s ease;
+							}
+						}
+
+					}
+				}
+			}
+			.borderhover{
+				margin-top: 10px;
+				border-top: 2px solid black;
+				box-shadow: 0 0 20px grey;
+			}
+			.leftborder{
+				border-left: 1px solid black; 
+					&:first-child{
+						border-left:none;
+					}	
+			}
+
+			.pages{
+				width: 1000px;
+				margin-left: -400px;				
+				ul{
+					
+					li{
+						list-style: none;
+						a{
+							margin-left: 5px;
 						}
 					}
 				}
 			}
+			.srch{
+				float: right;
+				margin-top: 5px;
+				button{
+					background:none;
+					border: none;
+					&:hover{
+						background:none;
+					}
+				}
+				span{
+					width: 200px;
+					margin-left:-200px; 
+					margin-top: 15px;
+					border-radius: 40px;
+					box-shadow: 0 0 20px grey;
+					background: transparent;
+					input{
+						padding: 5px;
+						margin-left:10px;
+						border: none;
+						outline: none;
+						
+						
+						
+					}
+					i{
+						
+					} 
+				}
+				
+			}
+		}		
+	}
+}
+#NavBarMobile{
+	.NavBarM{
+		img{
+			padding: 10px;
 		}
+		i{
+			font-size: 2em;
+		}
+	}	
+	.accordMenu{
+		width: 250px;
+		margin-left: -300px;
+		transition: all 2s ease; 
+		.rowStyle{
+			padding: 10px 2px;
+			&:hover{
+					@include blue;
+					a{
+						color:white;
+					}
+					i{
+						color:white;
+					}
+				}
+			a{
+				font-size: 1.4em;
+				text-transform: capitalize;
+				text-decoration: none;
+				i{
+					float: right;
+				}
+			}
+		}
+		.rowUlStyle{
+			ul{
+				li{
+					list-style: none;
+					margin-left:-40px;
+					&:hover{
+						@include blue;
+						a{
+							color:white;
+						}
+					}
+					a{
+						padding: 10px 0;
+						font-size: 1.2em;
+						text-decoration: none;
+					}
+				}
+
+			}
 		
+		}
 	}
 }

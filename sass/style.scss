@@ -1,6 +1,15 @@
 
 
 
+@mixin blue{
+	background: #084884;
+}
 
+@mixin lineblue{
+	background: #1872c5;
+}
+@mixin lineblue2{
+	background: #96c6f4;
+}
 
 @import "incudes/NavBar"

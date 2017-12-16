@@ -43,6 +43,9 @@
   margin-right: 50px;
   cursor: pointer;
 }
+#NavBar .mainNavBar .mainNavBarTop span {
+  color: #96c6f4;
+}
 #NavBar .mainNavBar .mainNavBarTop span i {
   width: 40px;
   height: 40px;
@@ -55,9 +58,26 @@
 }
 #NavBar .mainNavBar .mainNavBarTop span p {
   line-height: 15px;
+  color: #96c6f4;
+}
+#NavBar .mainNavBar .mainNavBarBottom ul li {
+  margin-right: 30px;
 }
 #NavBar .mainNavBar .mainNavBarBottom ul li a {
   color: white;
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+#NavBar .mainNavBar .mainNavBarBottom ul li a i {
+  margin-left: 3px;
+  transition: all .5s ease;
+}
+#NavBar .mainNavBar .mainNavBarBottom ul li a:hover {
+  background: #1872c5;
+  color: #96c6f4;
+}
+#NavBar .mainNavBar .mainNavBarBottom ul li a:hover i {
+  transform: rotate(180deg);
 }
 #NavBar .mainNavBar .mainNavBarBottom ul ul li {
   padding: 10px;
@@ -65,4 +85,104 @@
 }
 #NavBar .mainNavBar .mainNavBarBottom ul ul li a {
   color: #1872c5;
+  font-size: 1.1em;
+}
+#NavBar .mainNavBar .mainNavBarBottom ul ul li a:hover {
+  background: white;
+  color: #084884;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+#NavBar .mainNavBar .mainNavBarBottom .borderhover {
+  margin-top: 10px;
+  border-top: 2px solid black;
+  box-shadow: 0 0 20px grey;
+}
+#NavBar .mainNavBar .mainNavBarBottom .leftborder {
+  border-left: 1px solid black;
+}
+#NavBar .mainNavBar .mainNavBarBottom .leftborder:first-child {
+  border-left: none;
+}
+#NavBar .mainNavBar .mainNavBarBottom .pages {
+  width: 1000px;
+  margin-left: -400px;
+}
+#NavBar .mainNavBar .mainNavBarBottom .pages ul li {
+  list-style: none;
+}
+#NavBar .mainNavBar .mainNavBarBottom .pages ul li a {
+  margin-left: 5px;
+}
+#NavBar .mainNavBar .mainNavBarBottom .srch {
+  float: right;
+  margin-top: 5px;
+}
+#NavBar .mainNavBar .mainNavBarBottom .srch button {
+  background: none;
+  border: none;
+}
+#NavBar .mainNavBar .mainNavBarBottom .srch button:hover {
+  background: none;
+}
+#NavBar .mainNavBar .mainNavBarBottom .srch span {
+  width: 200px;
+  margin-left: -200px;
+  margin-top: 15px;
+  border-radius: 40px;
+  box-shadow: 0 0 20px grey;
+  background: transparent;
+}
+#NavBar .mainNavBar .mainNavBarBottom .srch span input {
+  padding: 5px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+}
+
+#NavBarMobile .NavBarM img {
+  padding: 10px;
+}
+#NavBarMobile .NavBarM i {
+  font-size: 2em;
+}
+#NavBarMobile .accordMenu {
+  width: 250px;
+  margin-left: -300px;
+  transition: all 2s ease;
+}
+#NavBarMobile .accordMenu .rowStyle {
+  padding: 10px 2px;
+}
+#NavBarMobile .accordMenu .rowStyle:hover {
+  background: #084884;
+}
+#NavBarMobile .accordMenu .rowStyle:hover a {
+  color: white;
+}
+#NavBarMobile .accordMenu .rowStyle:hover i {
+  color: white;
+}
+#NavBarMobile .accordMenu .rowStyle a {
+  font-size: 1.4em;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+#NavBarMobile .accordMenu .rowStyle a i {
+  float: right;
+}
+#NavBarMobile .accordMenu .rowUlStyle ul li {
+  list-style: none;
+  margin-left: -40px;
+}
+#NavBarMobile .accordMenu .rowUlStyle ul li:hover {
+  background: #084884;
+}
+#NavBarMobile .accordMenu .rowUlStyle ul li:hover a {
+  color: white;
+}
+#NavBarMobile .accordMenu .rowUlStyle ul li a {
+  padding: 10px 0;
+  font-size: 1.2em;
+  text-decoration: none;
 }
