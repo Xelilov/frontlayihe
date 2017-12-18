@@ -206,8 +206,9 @@
 			ul{
 				overflow-y:scroll;
 				&:nth-child(4){
-					overflow-y:scroll;
 					height:calc(100vh - 230px);
+					overflow-y:scroll;
+					
 				}
 				li{	
 					list-style: none;

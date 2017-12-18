@@ -195,8 +195,8 @@
   overflow-y: scroll;
 }
 #NavBarMobile .accordMenu .rowUlStyle ul:nth-child(4) {
-  overflow-y: scroll;
   height: calc(100vh - 230px);
+  overflow-y: scroll;
 }
 #NavBarMobile .accordMenu .rowUlStyle ul li {
   list-style: none;
@@ -417,13 +417,14 @@
   margin-top: 50px;
 }
 #slider .slide {
-  height: 250px;
+  height: 260px;
   position: relative;
   overflow: hidden;
 }
 #slider .Item {
   height: 250px;
   margin: 5px -10px;
+  box-shadow: 0 0 10px grey;
 }
 #slider button {
   position: relative;
