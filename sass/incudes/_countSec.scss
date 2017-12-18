@@ -1,0 +1,28 @@
+#count{
+	margin-top: 150px;
+	.count{
+		.countStyle{
+			text-align: center;
+
+			i{
+				font-size: 3.5em;
+				color:#1872c5;
+			}
+			h2{
+				font-size: 3em;
+			}
+			div{
+				width: 40px;
+				height: 5px;
+				border-bottom: 2px solid black;
+				margin-left: 43%;
+			}
+			p{
+				padding: 15px;
+				font-size: 1.3em;
+			}
+		}
+
+		
+	}
+}

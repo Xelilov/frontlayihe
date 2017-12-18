@@ -1,3 +1,9 @@
+#map {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+}
+
 #NavBar .topNavBar {
   padding: 13px 0px;
   background: #084884;
@@ -126,7 +132,7 @@
   background: none;
 }
 #NavBar .mainNavBar .mainNavBarBottom .srch span {
-  width: 200px;
+  width: 230px;
   margin-left: -200px;
   margin-top: 15px;
   border-radius: 40px;
@@ -185,6 +191,9 @@
 #NavBarMobile .accordMenu .rowStyle a i {
   float: right;
 }
+#NavBarMobile .accordMenu .rowUlStyle ul {
+  overflow-y: scroll;
+}
 #NavBarMobile .accordMenu .rowUlStyle ul li {
   list-style: none;
   margin-left: -40px;
@@ -196,9 +205,10 @@
   color: white;
 }
 #NavBarMobile .accordMenu .rowUlStyle ul li a {
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 1.2em;
   text-decoration: none;
+  text-transform: capitalize;
 }
 #NavBarMobile .accordMenu span {
   width: 200px;
@@ -327,7 +337,7 @@
   position: absolute;
   left: 40%;
   bottom: 50px;
-  z-index: 9999;
+  z-index: 9997;
 }
 #headerSlideMobil .slideFixed .diacnostic {
   text-transform: uppercase;
@@ -352,6 +362,73 @@
   cursor: pointer;
 }
 
+#count {
+  margin-top: 150px;
+}
+#count .count .countStyle {
+  text-align: center;
+}
+#count .count .countStyle i {
+  font-size: 3.5em;
+  color: #1872c5;
+}
+#count .count .countStyle h2 {
+  font-size: 3em;
+}
+#count .count .countStyle div {
+  width: 40px;
+  height: 5px;
+  border-bottom: 2px solid black;
+  margin-left: 43%;
+}
+#count .count .countStyle p {
+  padding: 15px;
+  font-size: 1.3em;
+}
+
+#ourServises {
+  background: #1872c5;
+  text-align: center;
+  position: relative;
+}
+#ourServises .Servis h1 {
+  color: white;
+  padding: 10px;
+}
+#ourServises .Servis p {
+  color: white;
+  padding: 30px 0;
+}
+#ourServises .rotateBox {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background: #1872c5;
+  position: absolute;
+  bottom: -23px;
+  left: 48.5%;
+}
+
+#slider {
+  margin-top: 50px;
+}
+#slider .slide {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+#slider .Item {
+  height: 250px;
+  margin: 5px -10px;
+}
+#slider button {
+  position: relative;
+  z-index: 100;
+}
+
+#blog {
+  margin-top: 30px;
+}
 #blog h1 {
   text-align: center;
   font-weight: bold;
@@ -377,4 +454,90 @@
 }
 #blog .boxs .text a {
   text-decoration: none;
+}
+#blog .blogButton {
+  width: 200px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  background: #1872c5;
+}
+#blog .blogButton:hover {
+  background: #084884;
+}
+
+#footer .footerBg {
+  background: black;
+}
+#footer .footerBg .footerLogos {
+  margin-top: 50px;
+  padding: 10px;
+}
+#footer .footerBg .footerLogos .footerIcons {
+  padding: 10px 0;
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+#footer .footerBg .footerLogos .footerIcons i {
+  margin-left: 5px;
+}
+#footer .footerBg .newsletter {
+  padding: 50px 0px;
+  color: white;
+}
+#footer .footerBg .newsletter .h3border {
+  border-bottom: 2px solid grey;
+}
+#footer .footerBg .newsletter p {
+  padding: 10px 5px;
+  color: grey;
+}
+#footer .footerBg .newsletter .input {
+  margin: 10px;
+  height: 40px;
+  background: white;
+  border-radius: 40px;
+  overflow: hidden;
+}
+#footer .footerBg .newsletter .input input {
+  padding: 10px;
+  color: black;
+  outline: none;
+  border: none;
+}
+#footer .footerBg .newsletter .input button {
+  float: right;
+  width: 100px;
+  border-radius: 40px;
+  border: none;
+  padding: 10px;
+  background: #1872c5;
+}
+#footer .footerBg .newsletter .input button:hover {
+  background: #084884;
+}
+#footer .footerBg .contact {
+  padding: 30px;
+}
+#footer .footerBg .contact .contactborder {
+  border-bottom: 2px solid grey;
+}
+#footer .footerBg .contact h3 {
+  color: white;
+}
+#footer .footerBg .contact div {
+  color: grey;
+  padding: 10px;
+}
+#footer .footerBg .contact div a {
+  text-decoration: none;
+}
+#footer .footerBg .contact div i {
+  padding: 10px;
+}
+#footer .footerBg .contact div p {
+  line-height: 0.8em;
 }

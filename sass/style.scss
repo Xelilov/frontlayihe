@@ -1,4 +1,8 @@
-
+#map{
+	margin-top:50px;
+	width: 100%;
+	height: 400px;
+}
 
 
 @mixin blue{
@@ -14,4 +18,8 @@
 
 @import "incudes/NavBar";
 @import "incudes/headerSlide";
+@import "incudes/countSec";
+@import "incudes/servises";
+@import "incudes/slide1";
 @import "incudes/blog";
+@import "incudes/footer";

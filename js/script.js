@@ -36,6 +36,10 @@ $(".shw").click(function(){
 
 
          // headerSlide js kodlari
+
+
+
+
 $(".img2").hide()
 $(".img3").hide()
 
@@ -73,3 +77,98 @@ $(".dot6").click(function(){
 	$(".img5").fadeOut(500)
 	$(".img6").fadeIn(500)
 })
+
+	
+
+	// count js files
+
+
+var like=0
+var data=0
+var user=0
+var tv=0
+
+var countlike;
+var countdata;
+var countuser;
+var counttv;
+
+countlike=setInterval(function(){
+	$(".countLike").find("h2").text(
+		like+=1
+		)
+	if(like==100){
+		clearInterval(countlike)
+	}
+},40)
+
+
+countdata=setInterval(function(){
+	$(".countData").find("h2").text(
+		data+=1
+		)
+	if(data==10){
+		clearInterval(countdata)
+	}
+},400)
+countuser=setInterval(function(){
+	$(".countUser").find("h2").text(
+		user+=7
+		)
+	if(user==2954){
+		clearInterval(countuser)
+	}
+},10)
+counttv=setInterval(function(){
+	$(".countTv").find("h2").text(
+		tv+=11
+		)
+	if(tv==3597){
+		clearInterval(counttv)
+	}
+},10)
+
+
+
+// slide01 js kodlari
+
+
+$(document).ready(function() {
+	count=0;
+
+	$("#left").click(function(event) {
+		if(count<0){
+			count=$(".item").length
+		}	
+		$($(".item")[count-1]).animate({
+				marginLeft:"+="+$($(".item")[0]).css("width")
+			})
+		count--;
+		console.log(count)
+		
+	});
+
+	$("#right").click(function(event) {
+		
+		$($(".item")[count]).animate({
+			marginLeft:"-="+$($(".item")[0]).css("width")
+		})
+		count++;
+		if(count>$(".item").length){
+			count=0
+		}
+		console.log(count)
+	});
+});
+
+
+
+// map js kodlari
+
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}

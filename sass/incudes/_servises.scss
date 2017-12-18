@@ -1,0 +1,28 @@
+#ourServises{
+	@include lineblue;
+	text-align: center;
+	position: relative;
+	.Servis{
+
+		h1{
+			color:white;
+			padding: 10px;
+		}
+		p{
+			color:white;
+			padding: 30px 0;
+		}
+	}
+	.rotateBox{
+		width: 50px;
+		height: 50px;
+		transform: rotate(45deg);
+		@include lineblue;
+		position: absolute;
+		bottom:-23px;
+		left: 48.5%;
+		
+
+	}
+	
+}

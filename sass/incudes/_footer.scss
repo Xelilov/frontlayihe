@@ -1,0 +1,79 @@
+#footer{
+	.footerBg{
+		background: black;
+		.footerLogos{
+			margin-top: 50px;
+			padding: 10px;
+			.footerIcons{
+				padding: 10px 0;
+				font-size: 1.5em;
+				margin-top: 40px;
+				i{
+					margin-left:5px;
+
+				}
+			}
+		}
+		.newsletter{
+			padding: 50px 0px;
+			color: white;
+			.h3border{
+				border-bottom: 2px solid grey;
+			}
+			p{	
+				padding: 10px 5px;
+				color:grey;
+			}
+			.input{
+				margin: 10px;
+				height: 40px;
+				background: white;
+				border-radius: 40px;
+				overflow: hidden;
+				input{
+
+					padding: 10px;
+					color:black;
+					outline: none;
+					border:none;
+					
+				}
+				button{
+					float: right;
+					width: 100px;
+					border-radius: 40px;
+					border:none;
+					padding: 10px;
+					@include lineblue;
+					&:hover{
+						@include blue;
+					}
+				}
+			}
+		}
+		.contact{
+			padding: 30px;
+			.contactborder{
+				border-bottom: 2px solid grey;
+			}
+			h3{
+				color:white;
+			}
+			div{
+				color:grey;
+				padding:10px;
+				a{
+					text-decoration: none;
+				}
+				i{	
+
+					padding: 10px;
+				}
+				p{
+					line-height: 0.8em;
+				}
+			}
+		}
+		
+	}
+}
