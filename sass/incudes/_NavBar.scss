@@ -149,13 +149,8 @@
 						margin-left:10px;
 						border: none;
 						outline: none;
-						
-						
-						
 					}
-					i{
-						
-					} 
+					
 				}
 				
 			}
@@ -164,6 +159,12 @@
 }
 #NavBarMobile{
 	.NavBarM{
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+		background: white;
 		img{
 			padding: 10px;
 		}
@@ -173,8 +174,14 @@
 	}	
 	.accordMenu{
 		width: 250px;
+		height: auto;
+		background: white;
 		margin-left: -300px;
 		transition: all 2s ease; 
+		position: fixed;
+		z-index: 9998;
+		top:50px;
+		left: 0px;
 		.rowStyle{
 			padding: 10px 2px;
 			&:hover{
@@ -216,5 +223,42 @@
 			}
 		
 		}
+		span{
+		width: 200px;
+		padding: 10px;
+		border-radius: 40px;
+		border: 2px solid black;
+		background: transparent;
+		input{
+			padding: 5px;
+			margin-left:10px;
+			border: none;
+			outline: none;
+			}
+		}
+		.iconsMobil{
+			padding: 20px;
+			margin: 20px;
+			i{
+				color: blue;
+				font-size: 1.2em;
+				margin-left: 5px;
+			}
+		}
+		button{
+			width: 200px;
+			border-radius: 30px;
+			background:#1872c5;
+			color:white;
+			font-size: 0.8em;
+			padding:10px;
+			text-transform: uppercase;
+			border:none;
+			margin: -5px 0px;
+			transition: all 2s ease;
+			&:hover{
+				background:#96c6f4;
+			}
+		}	
 	}
 }

@@ -140,6 +140,14 @@
   outline: none;
 }
 
+#NavBarMobile .NavBarM {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: white;
+}
 #NavBarMobile .NavBarM img {
   padding: 10px;
 }
@@ -148,8 +156,14 @@
 }
 #NavBarMobile .accordMenu {
   width: 250px;
+  height: auto;
+  background: white;
   margin-left: -300px;
   transition: all 2s ease;
+  position: fixed;
+  z-index: 9998;
+  top: 50px;
+  left: 0px;
 }
 #NavBarMobile .accordMenu .rowStyle {
   padding: 10px 2px;
@@ -184,5 +198,183 @@
 #NavBarMobile .accordMenu .rowUlStyle ul li a {
   padding: 10px 0;
   font-size: 1.2em;
+  text-decoration: none;
+}
+#NavBarMobile .accordMenu span {
+  width: 200px;
+  padding: 10px;
+  border-radius: 40px;
+  border: 2px solid black;
+  background: transparent;
+}
+#NavBarMobile .accordMenu span input {
+  padding: 5px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+}
+#NavBarMobile .accordMenu .iconsMobil {
+  padding: 20px;
+  margin: 20px;
+}
+#NavBarMobile .accordMenu .iconsMobil i {
+  color: blue;
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+#NavBarMobile .accordMenu button {
+  width: 200px;
+  border-radius: 30px;
+  background: #1872c5;
+  color: white;
+  font-size: 0.8em;
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+  margin: -5px 0px;
+  transition: all 2s ease;
+}
+#NavBarMobile .accordMenu button:hover {
+  background: #96c6f4;
+}
+
+#headerSlide {
+  position: relative;
+  height: 400px;
+}
+#headerSlide .slide-img-boxs {
+  width: 100%;
+  position: absolute;
+}
+#headerSlide .slide-img-boxs img {
+  width: 100%;
+}
+#headerSlide .slide-img-boxs h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 3.5em;
+  position: absolute;
+  top: 40px;
+  left: 70px;
+}
+#headerSlide .slide-img-boxs p {
+  font-style: italic;
+  font-size: 1.5em;
+  position: absolute;
+  top: 200px;
+  left: 70px;
+}
+#headerSlide .slideFixed {
+  position: absolute;
+  bottom: 30px;
+  left: 80px;
+}
+#headerSlide .slideFixed .diacnostic {
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  background: #1872c5;
+  display: block;
+  color: white;
+}
+#headerSlide .slideFixed .diacnostic:hover {
+  background: #084884;
+}
+#headerSlide .slideFixed .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: grey;
+  display: inline-block;
+  margin: 20px 0 0 20px;
+  cursor: pointer;
+}
+
+#headerSlideMobil {
+  position: relative;
+  height: 500px;
+}
+#headerSlideMobil .slide-pop-boxs {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#headerSlideMobil .slide-pop-boxs img {
+  width: 100%;
+  height: 500px;
+}
+#headerSlideMobil .slide-pop-boxs .popaptext {
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+#headerSlideMobil .slide-pop-boxs .popaptext h1 {
+  color: white;
+  font-size: 1.4em;
+  position: absolute;
+  left: 32%;
+  bottom: 150px;
+}
+#headerSlideMobil .slideFixed {
+  position: absolute;
+  left: 40%;
+  bottom: 50px;
+  z-index: 9999;
+}
+#headerSlideMobil .slideFixed .diacnostic {
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 50px;
+  margin-left: -10px;
+  border: none;
+  background: #1872c5;
+  display: block;
+  color: white;
+}
+#headerSlideMobil .slideFixed .diacnostic:hover {
+  background: #084884;
+}
+#headerSlideMobil .slideFixed .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: grey;
+  display: inline-block;
+  margin: 20px 0 0 30px;
+  cursor: pointer;
+}
+
+#blog h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+#blog .line {
+  width: 40px;
+  height: 5px;
+  border-bottom: 2px solid blue;
+  margin: 20px auto;
+}
+#blog .boxs {
+  box-shadow: 0px 0px 20px grey;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+#blog .boxs img {
+  width: 100%;
+}
+#blog .boxs .text {
+  padding: 20px;
+}
+#blog .boxs .text a {
   text-decoration: none;
 }

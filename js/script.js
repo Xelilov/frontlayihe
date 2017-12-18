@@ -17,9 +17,59 @@ $(".srch").click(function(){
 	}
 })
 
+var a=true;
 $(".shw").click(function(){
-	$(".accordMenu").css({
-		marginLeft:'0'
-	})
-	$(".accordMenu").toggle()
+	if(a==true){
+		$(".accordMenu").animate({
+		marginLeft:'0'		
+		})
+		a=false;
+	}
+	else{
+		$(".accordMenu").animate({
+		marginLeft:'-300px'
+		})
+		a=true;
+	}
+	
+})
+
+
+         // headerSlide js kodlari
+$(".img2").hide()
+$(".img3").hide()
+
+$(".dot1").click(function(){
+	$(".img1").fadeIn(500)
+	$(".img2").fadeOut(500)
+	$(".img3").fadeOut(500)
+})
+$(".dot2").click(function(){
+	$(".img1").fadeOut(500)
+	$(".img2").fadeIn(500)
+	$(".img3").fadeOut(500)
+})
+$(".dot3").click(function(){
+	$(".img1").fadeOut(500)
+	$(".img2").fadeOut(500)
+	$(".img3").fadeIn(500)
+})
+
+$(".img4").hide()
+$(".img5").hide()
+
+$(".dot4").click(function(){
+	$(".img4").fadeIn(500)
+	$(".img5").fadeOut(500)
+	$(".img6").fadeOut(500)
+})
+$(".dot5").click(function(){
+	$(".img4").fadeOut(500)
+	$(".img5").fadeIn(500)
+	$(".img6").fadeOut(500)
+})
+$(".dot6").click(function(){
+	$(".img4").fadeOut(500)
+	$(".img5").fadeOut(500)
+	$(".img6").fadeIn(500)
 })
