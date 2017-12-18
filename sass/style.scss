@@ -1,3 +1,8 @@
+.clear{
+	clear: both;
+}
+
+
 #map{
 	margin-top:50px;
 	width: 100%;
@@ -34,5 +39,7 @@
 @import "incudes/countSec";
 @import "incudes/servises";
 @import "incudes/slide1";
+@import "incudes/slide2";
+@import "incudes/text-slider";
 @import "incudes/blog";
 @import "incudes/footer";

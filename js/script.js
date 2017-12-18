@@ -137,30 +137,74 @@ $(document).ready(function() {
 	count=0;
 
 	$("#left").click(function(event) {
-		if(count<0){
-			count=$(".item").length
-		}	
-		$($(".item")[count-1]).animate({
+		if(count>0){
+			$($(".item")[count-1]).animate({
 				marginLeft:"+="+$($(".item")[0]).css("width")
 			})
-		count--;
-		console.log(count)
-		
+			count--;
+		}	
 	});
 
 	$("#right").click(function(event) {
-		
+	if(count < $(".item").length-4){
 		$($(".item")[count]).animate({
-			marginLeft:"-="+$($(".item")[0]).css("width")
+			marginLeft: "-="+$($(".item")[0]).css("width")
 		})
 		count++;
-		if(count>$(".item").length){
-			count=0
-		}
-		console.log(count)
+	}
 	});
 });
 
+
+
+// slide02 js kodlari
+$(document).ready(function() {
+	count=0;
+
+	$(".prew").click(function(event) {
+		if(count>0){
+			$($(".item1")[count-1]).animate({
+				marginLeft:"+="+$($(".item1")[0]).css("width")
+			})
+			count--;
+		}	
+	});
+
+	$(".next").click(function(event) {
+	if(count < $(".item1").length-4){
+		$($(".item1")[count]).animate({
+			marginLeft: "-="+$($(".item1")[0]).css("width")
+		})
+		count++;
+	}
+	});
+});
+
+
+// slide03 js kodlari
+
+
+$(document).ready(function() {
+	count=0;
+
+	$(".left").click(function(event) {
+		if(count>0){
+			$($(".item2")[count-1]).animate({
+				marginLeft:"+="+$($(".item2")[0]).css("width")
+			})
+			count--;
+		}	
+	});
+
+	$(".right").click(function(event) {
+	if(count < $(".item2").length-4){
+		$($(".item2")[count]).animate({
+			marginLeft: "-="+$($(".item2")[0]).css("width")
+		})
+		count++;
+	}
+	});
+});
 
 
 // map js kodlari

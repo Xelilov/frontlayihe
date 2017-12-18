@@ -1,0 +1,60 @@
+#textSlider{
+	margin-top:50px;
+	.textSliderheader{
+		h1{
+			text-align: center;
+			font-weight: bold;
+			padding: 15px;
+			font-size: 3em;
+		}
+		div{
+			margin:20px auto; 
+			width: 40px;
+			height: 5px;
+			@include blue;
+
+		}
+	}
+
+
+
+	.text-slide{
+	height:260px;
+	position:relative;
+	overflow:hidden;
+	}
+	.Item2{
+		height:250px;
+		margin:5px -10px;
+		img{
+			padding: 10px 20px;
+			float: left;
+		}
+		h4{
+			color:#1872c5;;
+			float: left;
+			padding: 10px 30px;
+			font-size: 1.3em;
+		}
+		p{
+			padding: 20px;
+			font-size: 1.2em;
+		}
+
+	}
+	
+	
+	.butns{
+			.left{
+				
+				border-radius: 30px;
+				@include lineblue;
+			}
+			.right{
+				border-radius: 30px;
+				@include lineblue;
+				border: none;
+				
+			}
+		}
+}

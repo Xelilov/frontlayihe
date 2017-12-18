@@ -1,3 +1,7 @@
+.clear {
+  clear: both;
+}
+
 #map {
   margin-top: 50px;
   width: 100%;
@@ -442,6 +446,111 @@
 }
 #slider .slideBottomButton:hover {
   background: #084884;
+}
+
+#sliderMiddle {
+  margin-top: 50px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+#sliderMiddle .middleSliderheader h1 {
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 3.5em;
+  color: white;
+}
+#sliderMiddle .middleSliderheader div {
+  margin: 20px auto;
+  width: 40px;
+  height: 5px;
+  background: #084884;
+}
+#sliderMiddle .fonslider {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#sliderMiddle .fonslider .slide-foto {
+  margin-left: 100px;
+  margin-top: 80px;
+  height: 100px;
+  overflow: hidden;
+}
+#sliderMiddle .fonslider .slide-foto .item1 {
+  padding: 30px 0px;
+}
+#sliderMiddle .fonslider .btns .prew {
+  position: absolute;
+  bottom: -20px;
+  left: 450px;
+  border-radius: 30px;
+  background: #1872c5;
+}
+#sliderMiddle .fonslider .btns .next {
+  border-radius: 30px;
+  background: #1872c5;
+  border: none;
+  position: absolute;
+  bottom: -20px;
+  right: 450px;
+}
+#sliderMiddle .topRow {
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background: black;
+}
+
+#textSlider {
+  margin-top: 50px;
+}
+#textSlider .textSliderheader h1 {
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 3em;
+}
+#textSlider .textSliderheader div {
+  margin: 20px auto;
+  width: 40px;
+  height: 5px;
+  background: #084884;
+}
+#textSlider .text-slide {
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+#textSlider .Item2 {
+  height: 250px;
+  margin: 5px -10px;
+}
+#textSlider .Item2 img {
+  padding: 10px 20px;
+  float: left;
+}
+#textSlider .Item2 h4 {
+  color: #1872c5;
+  float: left;
+  padding: 10px 30px;
+  font-size: 1.3em;
+}
+#textSlider .Item2 p {
+  padding: 20px;
+  font-size: 1.2em;
+}
+#textSlider .butns .left {
+  border-radius: 30px;
+  background: #1872c5;
+}
+#textSlider .butns .right {
+  border-radius: 30px;
+  background: #1872c5;
+  border: none;
 }
 
 #blog {
