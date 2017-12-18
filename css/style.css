@@ -162,7 +162,7 @@
 }
 #NavBarMobile .accordMenu {
   width: 250px;
-  height: auto;
+  height: 100vh;
   background: white;
   margin-left: -300px;
   transition: all 2s ease;
@@ -193,6 +193,10 @@
 }
 #NavBarMobile .accordMenu .rowUlStyle ul {
   overflow-y: scroll;
+}
+#NavBarMobile .accordMenu .rowUlStyle ul:nth-child(4) {
+  overflow-y: scroll;
+  height: calc(100vh - 230px);
 }
 #NavBarMobile .accordMenu .rowUlStyle ul li {
   list-style: none;
@@ -424,6 +428,19 @@
 #slider button {
   position: relative;
   z-index: 100;
+}
+#slider .slideBottomButton {
+  width: 200px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  background: #1872c5;
+}
+#slider .slideBottomButton:hover {
+  background: #084884;
 }
 
 #blog {

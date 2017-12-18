@@ -33,17 +33,7 @@
 		}
 	}
 	.blogButton{
-		width:200px;
-		padding: 10px 30px;
-		border-radius: 20px;
-		border:none;
-		color:white;
-		display: block;
-		margin:0 auto;
-		@include lineblue;
-		&:hover{
-			@include blue;
-		}
+		@include btton;
 
 	}
 }

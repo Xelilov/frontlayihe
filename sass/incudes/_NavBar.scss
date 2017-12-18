@@ -174,7 +174,7 @@
 	}	
 	.accordMenu{
 		width: 250px;
-		height: auto;
+		height:100vh;
 		background: white;
 		margin-left: -300px;
 		transition: all 2s ease;
@@ -205,6 +205,10 @@
 		.rowUlStyle{
 			ul{
 				overflow-y:scroll;
+				&:nth-child(4){
+					overflow-y:scroll;
+					height:calc(100vh - 230px);
+				}
 				li{	
 					list-style: none;
 					margin-left:-40px;
